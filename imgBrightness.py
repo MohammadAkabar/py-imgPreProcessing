@@ -11,8 +11,10 @@ grayScaleImg=cv.cvtColor(img,cv.IMREAD_GRAYSCALE)
 alpha = 1.5 # Contrast control (1.0-3.0)
 beta = 0 # Brightness control (0-100)
 
+#fungsi untuk mengubah brightness
 adjusted = cv.convertScaleAbs(img, alpha=alpha, beta=beta)
 
+#menampilkan hasil citra
 cv.imshow('original',img)
 cv.imshow('Brightness',adjusted)
 

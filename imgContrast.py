@@ -7,14 +7,14 @@ imgBright = cv.imread('test_img.jpg')
 grayScaleImg=cv.cvtColor(img,cv.IMREAD_GRAYSCALE)
 
 
-#brightness dilakukan
+#contrast dilakukan
 alpha = 1.0 # Contrast control (1.0-3.0)
 beta = 70 # Brightness control (0-100)
 
 adjusted = cv.convertScaleAbs(img, alpha=alpha, beta=beta)
 
 cv.imshow('original',img)
-cv.imshow('Brightness',adjusted)
+cv.imshow('Contrast',adjusted)
 
 
 

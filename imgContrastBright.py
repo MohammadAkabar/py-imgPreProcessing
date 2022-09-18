@@ -14,7 +14,7 @@ beta = 20 # Brightness control (0-100)
 adjusted = cv.convertScaleAbs(img, alpha=alpha, beta=beta)
 
 cv.imshow('original',img)
-cv.imshow('Brightness',adjusted)
+cv.imshow('Brightnes and contrast',adjusted)
 
 
 
